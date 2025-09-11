@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titan Plus Dashboard</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0014;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #bbb;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ff3c9d; 
+}
+.top-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;  
+  height: 300px;
+  background: url("Looper-3.png") no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: 0.9;
+  margin-right: -48px;
+}
+.dashboard-btn {
+background: linear-gradient(180deg, #BA00CE 0%, #560087 100%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #000 !important;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: -10px;
+}
+.dashboard-btn:hover {
+  transform: scale(1.05);
+}
+.highlight{
+  color: #ff3c9d; 
+  font-weight: 700;
+}
+.home-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: -10px;
+}
+.home-btn:hover {
+  transform: scale(1.05);
+}
+   
+    .top-section {
+     display: flex;
+     justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 3.5% 60px;
+  min-height: 50vh;
+ }
+
+    .card {
+      line-height: 150%;
+      letter-spacing: -2%;
+      vertical-align: middle;
+      text-transform: uppercase;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 18px;
+      line-height: 100%;
+      border-top: 2px solid #670072 ;
+      background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 41.37%, #141737 72.23%, #101A4A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .card ul {
+      list-style: none;
+      font-size: 14px;
+      width: 300px;
+    }
+
+    .card ul li {
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .green { color: #00ff99; }
+    .red { color: #ff3399; }
+
+    .bot-trades {
+      padding: 20px 40px;
+    }
+
+    .bot-trades h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .trade-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .trade-card {
+      background: rgba(175, 7, 7, 0.07);
+      padding: 10px;
+      border-radius: 20px;
+      text-align: center;
+       border-top: 2px solid #670072 ;
+       background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 41.37%, #141737 72.23%, #101A4A 100%);
+       height: 150px;
+
+      }
+
+    .trade-card h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+     }
+
+    .trade-card p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+.footer {
+  background: #120022;
+  padding: 60px 8% 20px;
+  margin-top: 3  0px;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.footer-columns h4 {
+  margin-bottom: 15px;
+  color: #ff3c9d;
+}
+.footer-columns p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+.reserved{
+  color: white;
+}
+.fb img, .yt img, .insta img, .twitter img, .discord img, .telegram img {
+  border-radius: 100%;
+  height: 30px;
+}
+.discord img, .telegram img {
+  height: 40px;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 70px;
+  align-items: center;
+}
+
+   
+  </style>
+</head>
+<body>
+  <a href="style.css"></a>
+    
+ <header class="header">
+    <div class="logo"><img src="logo.png" alt="">TITAN</div>
+    <nav>
+      <a href="index.html" class="home-btn">Home</a>
+      <a href="#">Titan Token</a>
+      <a href="#">Hello Titan</a>
+      <a href="#" class="dashboard-btn">Dashboard</a>
+    </nav>
+  </header> 
+
+  <section class="top-section">
+    <div class="card">
+      <h3><u class="highlight">TOP</u> COINS</h3>
+      <ul>
+        <li>1- BTC <p>$ 108,561.77</p> <span class="green">+2.1%</span></li>
+        <li>2- ETH <p>$ 4,337.57</p> <span class="red">-0.8%</span></li>
+        <li>3- BNB <p>$ 858.80</p> <span class="green">+3.4%</span></li>
+        <li>4- SOL <p>$ 204.88</p> <span class="red">0.83 %</span></li>
+        <li>5- LTC <p>$ 109.89</p> <span class="green">2.98 %</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3> <u class="highlight">HOT</u> COINS</h3>
+      <ul>
+         <li>1- BTC <p>$ 108,561.77</p> <span class="green">+2.1%</span></li>
+        <li>2- ETH <p>$ 4,337.57</p> <span class="red">-0.8%</span></li>
+        <li>3- BNB <p>$ 858.80</p> <span class="green">+3.4%</span></li>
+        <li>4- SOL <p>$ 204.88</p> <span class="red">0.83 %</span></li>
+        <li>5- LTC <p>$ 109.89</p> <span class="green">2.98 %</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><u class="highlight">MARKET</u> CAP</h3>
+      <p>$2.45T</p>
+    </div>
+    <div class="card">
+      <h3><u class="highlight">FEAR</u> & GREED</h3>
+      <p class="green">Extreme Greed</p>
+    </div>
+  </section>
+
+  <section class="bot-trades">
+    <h1><u class="highlight">BOT</u>  TRADES</h2>
+    <div class="trade-grid">
+      <div class="trade-card">
+        <h3>SOL/USDT</h3>
+        <p>$3,145.62</p>
+        <p>Investment: +5.4%</p>
+      </div>
+      <div class="trade-card">
+        <h3>ETH/USDT</h3>
+        <p>$3,145.62</p>
+        <p>Investment: +4.2%</p>
+      </div>
+      <div class="trade-card">
+        <h3>BTC/USDT</h3>
+        <p>$3,145.62</p>
+        <p>Investment: +6.1%</p>
+      </div>
+      <div class="trade-card">
+        <h3>BNB/USDT</h3>
+        <p>$57.62</p>
+        <p>Investment: +3.8%</p>
+      </div>
+      <div class="trade-card">
+        <h3>LTC/USDT</h3>
+        <p>$3,145.62</p>
+        <p>Investment: +4.1%</p>
+      </div>
+      <div class="trade-card">
+        <h3>XRP/USDT</h3>
+        <p>$3,145.62</p>
+        <p>Investment: +5.6%</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h4>Overview</h4>
+        <p>Titan Plus</p>
+        <p>Titan Token</p>
+        <p>Hello Titans</p>
+        <p>Dashboard</p>
+        <p>Whitepaper</p>
+      </div>
+      <div>
+        <h4>Powered By</h4>
+        <p>Coin Market Cap</p>
+        <p>Coin Gecko</p>
+        <p>Binance</p>
+        <p>Kroken</p>
+      </div>
+      <div>
+        <h4>Future Integrations</h4>
+        <p>Coinbase</p>
+        <p>Bybit</p>
+        <p>Okx</p>
+      </div>
+      <div>
+        <h4>A New Era of Trading</h4>
+        <P>Automated, stable returns for the next generation of traders.</P>
+        <p>Email: contact@titanon.io</p>
+      </div>
+    </div>
+    <hr/>
+    <div class="icon">
+      <img class="fb" src="fb.png" alt="">
+       <img class="insta" src="insta.png" alt="">
+       <img class="twitter" src="twitter.png" alt="">
+       <img class="yt" src="yt.png" alt="">
+       <img class="discord" src="discord.png" alt="">
+       <img class="telegram" src="telegram.png" alt="">
+    </div>
+      <div class="footer-bottom">
+      <p class="reserved">© 2025 Titan Token. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

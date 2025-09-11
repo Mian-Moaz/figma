@@ -1,0 +1,243 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0014;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+}
+nav {
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #bbb;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ff3c9d; 
+}
+.dashboard-btn {
+  background: linear-gradient(90deg, #39ff14, #00ff9d);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #000 !important;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: -10px;
+}
+.dashboard-btn:hover {
+  transform: scale(1.05);
+}
+.home-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: -10px;
+}
+.home-btn:hover {
+  transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 8% 60px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #2a0048, #0a0014 70%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;  
+  height: 300px;
+  background: url("Looper-3.png") no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: 0.9;
+  margin-right: -48px;
+}
+.hero-text {
+  max-width: 50%;
+  position: relative;
+  z-index: 2;
+}
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero-text .highlight {
+  color: #ff3c9d; 
+  font-weight: 700;
+}
+.hero-text p {
+  margin: 15px 0;
+  color: #ccc;
+  font-size: 16px;
+}
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+.hero-image img {
+  width: 350px;
+  animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+.features::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;  
+  height: 350px;
+  background: url("Looper-4.png") no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 40px 4%;
+}
+
+
+.feature-card {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 41.37%, #141737 72.23%, #101A4A 100%);
+  border-bottom: 2px solid #670072;
+  border-radius: 16px;
+  padding: 25px;
+  
+}
+
+.feature-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.feature-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ff00cc;
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+
+.feature-img img {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 900px) {
+  .features {
+    flex-direction: column;
+  }
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-content {
+    padding-right: 0;
+  }
+  .feature-img img {
+    margin-top: 15px;
+  }
+}
+
+
+  .footer {
+    background: #120022;
+    padding: 50px 8% 20px;
+  }
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .footer-columns h4 {
+    margin-bottom: 15px;
+    color: #ff3c9d;
+  }
+  .footer-columns p {
+    margin: 5px 0;
+    color: #ffffff;
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+    font-size: 14px;
+    color: #777;
+  }
+  .reserved{
+    color: white;
+  }
+  .fb img, .yt img, .insta img, .twitter img, .discord img, .telegram img {
+    border-radius: 100%;
+    height: 30px;
+  }
+  .discord img, .telegram img {
+    height: 40px;
+  }
+  .icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 70px;
+    align-items: center;
+  }
