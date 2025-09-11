@@ -24,13 +24,13 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 1px; */
   font-size: 22px;
   font-weight: 700;
   color: #fff;
 }
 .logo img {
-  height: 40px;
+  height: 90px;
   width: auto;
 }
 nav {
