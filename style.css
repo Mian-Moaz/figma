@@ -197,12 +197,30 @@ background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 
     margin-top: 15px;
   }
 }
+.footer::before {
+  content: "";
+  position: absolute; 
+  left: 0; 
+  width: 1500px; 
+  height: 450px; 
+  background: url("footerbg.png") no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: 2;
+  margin-bottom: 10px;
+}
 
 
   .footer {
     background: #120022;
     padding: 50px 8% 20px;
+    background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 41.37%, #141737 72.23%, #101A4A 100%);
   }
+  .footerlogo{
+    height: 200px ;
+    width: 200px;
+    background-color: #141737;
+    }
   .footer-columns {
     display: flex;
     justify-content: space-between;
@@ -234,6 +252,7 @@ background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 
   .discord img, .telegram img {
     height: 40px;
   }
+
   .icon{
     display: flex;
     justify-content: center;
