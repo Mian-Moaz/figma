@@ -22,11 +22,9 @@ body {
   width: 100%;
   z-index: 1000;
 }
-
 .logo {
   display: flex;
   align-items: center;
-  /* gap: 1px; */
   font-size: 22px;
   font-weight: 700;
   color: #fff;
