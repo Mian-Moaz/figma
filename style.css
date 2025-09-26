@@ -236,7 +236,7 @@ footer {
       #141737 72.23%, 
       #101A4A 100%
     );
-  background-size: cover, cover; /* pehle image ke liye, phir gradient ke liye */
+  background-size: cover, cover;
   padding: 40px 4% 20px;
   position: relative;
   z-index: 2;
@@ -252,7 +252,7 @@ footer {
 .footer-1 {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap; /* responsive */
+  flex-wrap: wrap;
   margin-top: 40px;
   width: 100%;
   gap: 30px;
@@ -272,7 +272,7 @@ footer {
 }
 
 .footer-1 p:hover {
-  color: #ff3c9d; /* hover effect */
+  color: #ff3c9d;
 }
 
 .icon {
@@ -284,24 +284,6 @@ footer {
   margin-top: 20px;
 }
 
-/* .fb,
-.yt,
-.insta,
-.twitter,
-.discord,
-.telegram {
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.discord,
-.telegram {
-  height: 40px;
-  width: 40px;
-} */
 
 .fb:hover,
 .yt:hover,

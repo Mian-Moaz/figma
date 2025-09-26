@@ -136,10 +136,24 @@
       margin-left: 40px;
     }
 
-    .right-side .card {
-      padding: 28px;
+
+    .fear-greed-bar {
+      width: 100%;
+      height: 12px;
+      border-radius: 6px;
+      background: linear-gradient(106.35deg, #EA3943 26.38%, #14C784 82.26%);
+      margin: 8px 0;
+      position: relative;
+      overflow: hidden;
     }
 
+    .fear-greed-bar .progress {
+      position: absolute;
+      top: 0;
+      left: 70%;
+      width: 2px;
+      height: 100%;
+    }
 
     .card {
       width: 200px;
@@ -284,7 +298,8 @@
       font-size: 14px;
       list-style: none;
     }
-    .trade-cardtext{
+
+    .trade-cardtext {
       padding-inline: 30px;
     }
 
@@ -412,11 +427,15 @@
         <h3> <u class="highlight">MARKET</u> CAP</h3>
         <p>$1.5 Trillion</p>
       </div>
-
       <div class="card">
         <h3><u class="highlight">FEAR</u> & GREED</h3>
         <p class="extreme-greed">Extreme Greed</p>
+        <div class="fear-greed-bar">
+          <div class="progress"></div>
+        </div>
       </div>
+
+    </div>
     </div>
   </section>
   <section class="bot-section">
