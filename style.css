@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
- background: rgba(2, 5, 38, 1);
+  background: rgba(2, 5, 38, 1);
   color: #fff;
   line-height: 1.6;
 }
@@ -22,6 +22,7 @@ body {
   width: 100%;
   z-index: 1000;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -51,15 +52,15 @@ nav a:hover {
   color: #ff3c9d;
 }
 
-.dashboard-btn {
-  background: linear-gradient(90deg, #39ff14, #00ff9d);
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: #000 !important;
-  font-weight: 600;
-  transition: 0.3s;
-  margin-top: -10px;
-}
+  .dashboard-btn {
+      background: linear-gradient(180deg, #BA00CE 0%, #560087 100%);
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: #ffffff !important;
+      font-weight: 600;
+      transition: 0.3s;
+      margin-top: -10px;
+    }
 
 .dashboard-btn:hover {
   transform: scale(1.05);
@@ -81,7 +82,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 120px 8% 60px;
+  padding: 100px 8% 6px;
   min-height: 100vh;
   background: rgba(2, 5, 38, 1);
   position: relative;
@@ -176,7 +177,7 @@ nav a:hover {
   background: radial-gradient(146.48% 268.96% at 100% 73.59%, #670072 0%, #141737 41.37%, #141737 72.23%, #101A4A 100%);
   border-bottom: 2px solid #670072;
   border-radius: 16px;
-  padding: 25px;
+  padding: 20px;
 
 }
 
@@ -227,15 +228,13 @@ nav a:hover {
 
 
 footer {
-  background: 
-    url("footerbg.png") no-repeat center center, 
-    radial-gradient(
-      146.48% 268.96% at 100% 73.59%, 
-      #670072 0%, 
-      #141737 41.37%, 
-      #141737 72.23%, 
-      #101A4A 100%
-    );
+  background:
+    url("footerbg.png") no-repeat center center,
+    radial-gradient(146.48% 268.96% at 100% 73.59%,
+      #670072 0%,
+      #141737 41.37%,
+      #141737 72.23%,
+      #101A4A 100%);
   background-size: cover, cover;
   padding: 40px 4% 20px;
   position: relative;
